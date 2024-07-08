@@ -8,6 +8,8 @@ This is a little [Boot.dev](https://boot.dev) leaderboard web application for yo
 
 Configuration is performed using environment variables, so make sure to set those.
 
+Make sure to modify the `env` file to include the usernames you would like to have on the leaderboard.
+
 ```
 TITLE="Script Kiddies" USERNAMES=username1,username2,username3 go run main.go
 ```
