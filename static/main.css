@@ -1,0 +1,6 @@
+#ranks.htmx-settling table {
+  opacity: 0;
+}
+#ranks table {
+  transition: opacity 300ms ease-in;
+}

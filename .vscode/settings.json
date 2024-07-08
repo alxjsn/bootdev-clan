@@ -1,0 +1,5 @@
+{
+  "[html, css, javascript, json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}

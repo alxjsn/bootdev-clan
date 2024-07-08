@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <th>Rank</th>
+    <th>Handle</th>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Total XP</th>
+  </thead>
+  {{ range $i, $u := .Ranks.Users }}
+    <tr>
+      <th>{{ add $i 1 }}</th>
+      <td>
+        <a href="https://www.boot.dev/u/{{ $u.Handle }}" target="_blank"
+          >{{ $u.Handle }}</a
+        >
+      </td>
+      <td>{{ $u.FirstName }} {{ $u.LastName }}</td>
+      <td>{{ $u.Level }}</td>
+      <td>{{ $u.XPTotalForLevel }}</td>
+    </tr>
+  {{ end }}
+</table>
